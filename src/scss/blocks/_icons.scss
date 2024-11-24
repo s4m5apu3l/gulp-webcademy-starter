@@ -1,0 +1,46 @@
+.icon {
+	fill: transparent;
+	stroke: transparent;
+	width: 24px;
+	height: 24px;
+	min-width: 24px;
+}
+
+.icon--logo {
+	fill: var(--color-fr-primary);
+	width: 100%;
+	height: 100%;
+}
+
+.icon--arrow {
+	fill: var(--color-fr-secondary);
+	width: 16px;
+	height: 16px;
+	min-width: 16px;
+	&.left {
+		transform: rotate(90deg);
+	}
+	&.right {
+		transform: rotate(-90deg);
+	}
+	&.top {
+		transform: rotate(360deg);
+	}
+}
+.icon--nav-pin,
+.icon--search {
+	fill: var(--color-fr-secondary);
+}
+.icon--heart,
+.icon--basket,
+.icon--user,
+.icon--catalog,
+.icon--search,
+.icon--vk,
+.icon--whatsapp,
+.icon--telegram,
+.icon--youtube,
+.icon--close,
+.icon--call {
+	fill: var(--color-fr);
+}

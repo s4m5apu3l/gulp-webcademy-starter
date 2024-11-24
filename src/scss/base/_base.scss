@@ -1,0 +1,54 @@
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+body {
+	color: var(--color-fr);
+	font-family: var(--font-main);
+	text-wrap: balance;
+	min-width: 340px;
+	background-color: #f9fafb;
+	overflow-x: hidden;
+	&::before {
+		content: '';
+		position: fixed;
+		inset: 0;
+		width: 100vw;
+		height: 100dvh;
+		background: #5e5e5e80;
+		z-index: 100;
+		pointer-events: none;
+		opacity: 0;
+		transition: opacity 0.4s ease;
+	}
+	&.catalog-active {
+		&::before {
+			opacity: 1;
+		}
+	}
+	&.backdrop-active {
+		&::before {
+			opacity: 1;
+			z-index: 500;
+		}
+	}
+}
+
+// это стики хуйня надо ли? upd: nado ebit
+html,
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+img {
+	display: block;
+}
+a {
+	color: inherit;
+}
+picture {
+	width: 100%;
+	height: 100%;
+}
